@@ -4,7 +4,7 @@ const fastify = Fastify({
 });
 
 fastify.get('/', function (request, reply) {
-  reply.send({ hello: 'world' });
+  reply.send({ hello: 'world fastify' });
 });
 
 fastify.listen({ port: 3000 }, function (err, address) {
